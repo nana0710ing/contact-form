@@ -61,3 +61,51 @@
     color: #fff;
     cursor: pointer;
 }
+
+.form__button-correction {
+    padding: 10px;
+    width: 30%;
+    height: 50px;
+    background: #ccc;
+    border: none;
+    cursor: pointer;
+}
+
+.form__button {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.form__button-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.confirm-table__header {
+    background: #8B7969;
+    /* 茶色っぽい */
+    color: #fff;
+}
+
+.form__button-submit {
+    background: #8B7969;
+    color: #fff;
+}
+
+.form__button-correction {
+    background: none;
+    border: none;
+    color: #8B7969;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 2px;
+}
+
+h2 {
+    color: #8B7969;
+}

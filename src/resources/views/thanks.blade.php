@@ -1,13 +1,12 @@
 @extends('layouts.app')
 
 @section('css')
-  <link rel="stylesheet" href="{{ asset('css/thanks.css') }}" />
-  @endsection
+<link rel="stylesheet" href="{{ asset('css/thanks.css') }}">
+@endsection
 
-  @section('content')
-    <div class="thanks__content">
-      <div class="thanks__heading">
-        <h2>お問い合わせありがとうございます</h2>
-      </div>
-    </div>
-  @endsection
+@section('content')
+<div class="thanks">
+  <p class="thanks__message">お問い合わせありがとうございました</p>
+  <a class="thanks__button" href="/">HOME</a>
+</div>
+@endsection

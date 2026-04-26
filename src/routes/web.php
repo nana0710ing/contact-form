@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\AuthController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,9 +15,20 @@ use App\Http\Controllers\ContactController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-Route::get('/', [ContactController::class, 'index']);
+
+Route::get('/contacts', [ContactController::class, 'index']);
 Route::post('/contacts/confirm', [ContactController::class, 'confirm']);
 Route::post('/contacts', [ContactController::class, 'store']);
+Route::get('/thanks', [ContactController::class, 'thanks']);
+Route::get('/admin', [ContactController::class, 'admin']);
+Route::get('/register', [AuthController::class, 'register']);
+Route::get('/login', [AuthController::class, 'login'])->name('login');
+Route::post('/register', [AuthController::class, 'store']);
+Route::post('/login', [AuthController::class, 'authenticate']);
+Route::post('/logout', [AuthController::class, 'logout']);
+Route::get('/admin', [ContactController::class, 'admin'])->middleware('auth');
+Route::delete('/delete/{id}', [ContactController::class, 'destroy']);
+Route::get('/admin/export', [ContactController::class, 'export']);
+Route::get('/', function () {
+    return redirect('/contacts');
+});

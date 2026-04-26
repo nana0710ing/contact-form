@@ -67,3 +67,346 @@
     color: #fff;
     cursor: pointer;
 }
+
+.form__group {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.form__group-title {
+    width: 220px;
+}
+
+.form__group-content {
+    flex: 1;
+}
+
+.form__group-content input,
+.form__group-content textarea {
+    width: 100%;
+}
+.form {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.form__group {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.form__group-title {
+    width: 180px;
+    flex-shrink: 0;
+}
+
+.form__group-content {
+    flex: 1;
+}
+
+.form__input--text input,
+.form__input--textarea textarea {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form__button {
+    text-align: center;
+}
+
+.form__button-submit {
+    width: 200px;
+}
+.form__group-content label {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.form {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.form__group {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.form__group-title {
+    width: 30%;
+}
+
+.form__group-detail {
+    width: 70%;
+}
+
+.form__input--text input,
+.form__input--select select,
+.form__input--textarea textarea {
+    width: 100%;
+}
+
+.contact-form__detail {
+    padding: 40px 20px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.form {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.form__group {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.form__group-title {
+    width: 30%;
+    text-align: left;
+}
+
+.form__group-detail {
+    width: 70%;
+}
+
+.form__input-text input,
+.form__input-select select,
+.form__input-textarea textarea {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form__input-text div {
+    display: flex;
+    gap: 20px;
+}
+
+.form__input-text div input {
+    width: 50%;
+}
+
+.form__group {
+    display: flex;
+    align-items: center;
+    /* ← ここ変更（flex-startじゃなくてOK） */
+    margin-bottom: 30px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.contact-form__detail {
+    padding: 30px 20px 20px;
+}
+
+.contact-form__heading {
+    margin-bottom: 30px;
+}
+
+.form__group {
+    margin-bottom: 22px;
+}
+
+.form__input-text input,
+.form__input-select select {
+    height: 38px;
+}
+
+.form__input-textarea textarea {
+    height: 120px;
+}
+
+.contact-form__detail {
+    padding: 20px 20px 10px;
+}
+
+.contact-form__heading {
+    margin-bottom: 20px;
+}
+
+.form__group {
+    margin-bottom: 16px;
+}
+
+.form__input-text input,
+.form__input-select select {
+    height: 34px;
+}
+
+.form__input-textarea textarea {
+    height: 100px;
+}
+
+.form__input-textarea textarea {
+    height: 90px;
+}
+
+.form__button {
+    margin-top: 20px;
+}
+
+.contact-form__heading h2 {
+    color: #8b7969;
+    font-family: serif;
+}
+
+.form__label--item {
+    color: #8b7969;
+}
+
+.form__label--required {
+    color: #ff9494;
+    background: none;
+}
+
+.form__input-text input,
+.form__input-select select,
+.form__input-textarea textarea {
+    background: #f4f4f4;
+    border: none;
+    color: #8b7969;
+}
+
+.form__button-submit {
+    color: #fff;
+    border: none;
+}
+
+.form__input,
+.form__select,
+.form__textarea,
+input,
+select,
+textarea {
+    background-color: #f4f4f4;
+    border: none;
+}
+
+.form__button-submit {
+    background-color: #8b7969;
+    color: #fff;
+}
+
+.form__group-gender {
+    display: flex;
+    justify-content: center;
+    /* ←中央寄せ */
+    gap: 40px;
+}
+
+input[type="radio"] {
+    accent-color: #8b7969;
+    /* ←これで色変わる！ */
+}
+
+.form__label,
+.form__label span,
+.form__group label {
+    color: #8b7969;
+}
+
+.form__group-gender {
+    justify-content: flex-start;
+    padding-left: 0;
+}
+
+.form__group-content {
+    display: flex;
+    align-items: center;
+}
+
+.form__group-gender {
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.form__input--long {
+    width: 100%;
+}
+
+.form__input input {
+    width: 100%;
+}
+
+.form__group {
+    display: flex;
+}
+
+.form__group-title {
+    width: 30%;
+}
+
+.form__group-detail {
+    width: 70%;
+}
+
+.form__group-detail--gender {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.form__group-detail--gender {
+    display: flex !important;
+    justify-content: flex-start !important;
+    align-items: center !important;
+    gap: 30px !important;
+    width: 100% !important;
+    text-align: left !important;
+}
+
+.form__group-detail--gender label {
+    display: inline-flex !important;
+    align-items: center !important;
+    margin-right: 20px;
+    white-space: nowrap;
+}
+
+.form__input--text input,
+.form__input-text input {
+    width: 100% !important;
+}
+
+.form__group-detail>label {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.form__group-detail input[name="address"] {
+    width: 100% !important;
+}
+
+.form__group-detail {
+    margin-left: 0;
+}
+
+.form__group-title {
+    width: 30%;
+}
+
+.form__group-detail {
+    width: 70%;
+}
+
+.form__input--text {
+    width: 100%;
+}
+
+.form__input--text input {
+    width: 100%;
+}

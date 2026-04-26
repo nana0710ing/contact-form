@@ -1,0 +1,18 @@
+.form__group {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.form__group-title {
+    width: 220px;
+}
+
+.form__group-content {
+    flex: 1;
+}
+
+.form__group-content input,
+.form__group-content textarea {
+    width: 100%;
+}
