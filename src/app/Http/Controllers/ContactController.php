@@ -34,9 +34,7 @@ class ContactController extends Controller
 {
     $contact = session('contact');
 
-    Contact::create($contact);
-
-    return redirect('thanks');
+    return view('thanks');
 }
 public function thanks()
 {
@@ -83,6 +81,10 @@ public function admin(Request $request)
     $categories = Category::all();
 
     return view('admin', compact('contacts', 'categories'));
+}
+public function search(Request $request)
+{
+    return $this->admin($request);
 }
 public function destroy($id)
 {

@@ -6,9 +6,10 @@
 
 @section('content')
 <div class="admin">
+    
   <h2 class="admin__heading">Admin</h2>
 
-  <form method="get" action="/admin" class="search-form">
+  <form method="get" action="/search" class="search-form">
   <input type="text" name="keyword" placeholder="名前やメールアドレスを入力してください"
          value="{{ request('keyword') }}">
 
@@ -35,7 +36,7 @@
   <a href="/admin">リセット</a>
 </form>
 
-<a href="{{ url('/admin/export') . '?' . http_build_query(request()->except('page')) }}" class="export-btn">エクスポート</a>
+<a href="{{ url('/export') . '?' . http_build_query(request()->except('page')) }}" class="export-btn">エクスポート</a>
 
 <div class="pagination-wrap">
     <!-- 前へ -->

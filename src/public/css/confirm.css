@@ -1,8 +1,7 @@
 .confirm__content {
-    margin: 0 auto;
-    padding: 30px 15px;
-    max-width: 1230px;
-}
+    margin-top: 0;
+    padding-top: 0;
+    }
 
 .confirm__heading {
     margin-bottom: 40px;
@@ -108,4 +107,23 @@ h2 {
 
 h2 {
     color: #8B7969;
+}
+
+.confirm-table__text {
+    text-align: left;
+}
+
+.confirm-text {
+    display: inline-block;
+    width: 100%;
+    padding: 8px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.confirm-table__inner {
+    margin-top: 0;
+}
+
+.confirm-table {
+    padding-top: 0;
 }

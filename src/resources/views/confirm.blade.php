@@ -9,15 +9,17 @@
       <div class="confirm__heading">
         <h2>Confirm</h2>
       </div>
-      <form class="form" action="/contacts" method="post">
+      <form class="form" action="/thanks" method="post">
         @csrf
         <div class="confirm-table">
           <table class="confirm-table__inner">
             <tr class="confirm-table__row">
               <th class="confirm-table__header">お名前</th>
               <td class="confirm-table__text">
-                <input type="text" name="last_name" value="{{ $contact['last_name'] }}" readonly />
-　　　　　　　　　　<input type="text" name="first_name" value="{{ $contact['first_name'] }}" readonly />
+                <span class="confirm-text">
+  {{ $contact['last_name'] }} {{ $contact['first_name'] }}
+</span>
+</td>
 　　　　　　　　　　</td>
             </tr>
             <tr class="confirm-table__row">
@@ -69,7 +71,12 @@
 　　　　　<input type="hidden" name="category_id" value="{{ $contact['category_id'] }}">
 　　　　　<input type="hidden" name="detail" value="{{ $contact['detail'] }}">
 　　　　<div class="form__button-group">
-  <button class="form__button-correction" type="submit" formaction="/contacts" formmethod="get">修正</button>
+　<button
+    class="form__button-correction"
+    type="button"
+    onclick="history.back()">
+    修正
+</button>
   <button class="form__button-submit" type="submit">送信</button>
 </div>
 </form>

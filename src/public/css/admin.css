@@ -483,3 +483,18 @@ h1 {
 
     cursor: pointer;
 }
+
+.logout-form {
+    position: absolute;
+    top: 26px;
+    right: 40px;
+}
+
+.logout-btn {
+    padding: 6px 14px;
+    border: 1px solid #8B7969;
+    background: #fff;
+    color: #8B7969;
+    border-radius: 3px;
+    cursor: pointer;
+}

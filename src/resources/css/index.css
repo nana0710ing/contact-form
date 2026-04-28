@@ -16,3 +16,10 @@
 .form__group-content textarea {
     width: 100%;
 }
+
+.form__error {
+    margin-top: 8px;
+    width: 100%;
+    color: red;
+    position: static;
+}

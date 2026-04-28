@@ -14,21 +14,17 @@ use App\Http\Controllers\AuthController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-
-Route::get('/contacts', [ContactController::class, 'index']);
+Route::get('/', [ContactController::class, 'index']);
 Route::post('/contacts/confirm', [ContactController::class, 'confirm']);
-Route::post('/contacts', [ContactController::class, 'store']);
-Route::get('/thanks', [ContactController::class, 'thanks']);
-Route::get('/admin', [ContactController::class, 'admin']);
+Route::get('/thanks', [ContactController::class, 'store']);
+Route::post('/thanks', [ContactController::class, 'store']);
 Route::get('/register', [AuthController::class, 'register']);
-Route::get('/login', [AuthController::class, 'login'])->name('login');
 Route::post('/register', [AuthController::class, 'store']);
-Route::post('/login', [AuthController::class, 'authenticate']);
-Route::post('/logout', [AuthController::class, 'logout']);
-Route::get('/admin', [ContactController::class, 'admin'])->middleware('auth');
-Route::delete('/delete/{id}', [ContactController::class, 'destroy']);
+Route::get('/admin', [ContactController::class, 'admin']);
+Route::get('/export', [ContactController::class, 'export']);
 Route::get('/admin/export', [ContactController::class, 'export']);
-Route::get('/', function () {
-    return redirect('/contacts');
-});
+Route::post('/logout', [AuthController::class, 'logout']);
+Route::get('/login', [AuthController::class, 'login']);
+Route::post('/login', [AuthController::class, 'authenticate']);
+Route::delete('/delete/{id}', [ContactController::class, 'destroy']);
+Route::get('/search', [ContactController::class, 'search']);

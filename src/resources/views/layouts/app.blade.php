@@ -16,15 +16,12 @@
   <header class="header">
   <div class="header__inner">
   <a href="/" class="header__logo">FashionablyLate</a>
-
-  @auth
-  @if(request()->is('admin*'))
-    <form action="/logout" method="post" class="header__logout">
-      @csrf
-      <button type="submit" class="header__login">logout</button>
-    </form>
-  @endif
-@endauth
+@if(request()->is('admin*'))
+<form action="/logout" method="post" class="header__logout">
+    @csrf
+    <button type="submit" class="header__login">logout</button>
+</form>
+@endif
 </div>
 
   <main>
